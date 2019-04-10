@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+.container{
+  background-color: lightgrey;
+  border: 10px solid black;
+  padding: 20px;
+  margin: 20px;
+  min-height: 400px 
+}
+
+.title {
+padding: 0px 0px 10px 0px;
+margin: 0px;
+text-align: center;
+}
+
+.button {
+  background-color: orange;
+  border: 1px;
+  color: black;
+  padding: 20px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 10px 20px 10px;
+  cursor: pointer;
+}
+
+.grouped {
+position: relative;
+}
+
+.buttonSpace {
+position: absolute;
+top: 0;
+right: 0;
+}
+
+</style>
+
+
+<h2>HTML Forms</h2>
+
+<div class="container">
+	<h1 class="title">To Do List</h1>
+    
+ 	<form action="/action_page.php" name="confirmationForm" method="post">
+    
+    <div class="grouped">
+    	<textarea id="confirmationText" class="text" cols="50" rows ="4" name="confirmationText" placeholder="New Task..."></textarea>
+        <div class=buttonSpace>
+        <input type="submit" value="Add Task" class="button">
+        </div>
+	</div>
+    
+	</form>
+</div>
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
